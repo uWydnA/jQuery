@@ -94,6 +94,34 @@ $(".list").find("li")
 
 
 
+### 父元素 parent()
+
+#### 方法
+
+```js
+$(".list").parent();
+```
+
+
+
+### 父祖先元素 parents()
+
+#### 方法
+
+```js
+$(".list").parents();
+```
+
+
+
+### 父直到哪个祖元素 parentsUntil()
+
+#### 方法
+
+```js
+$(".span").parentsUntil(".box1")//不包含.box1元素
+```
+
 
 
 ## 伪类选择器
@@ -114,7 +142,7 @@ $(".list").next()
 
 
 
-### 后面所有特定兄弟元 nextAll("span")
+### 后面所有特定兄弟元素 nextAll("span")
 
 #### 选择器
 
@@ -122,7 +150,7 @@ $(".list").next()
 $(".list~span")
 ```
 
-方法
+#### 方法
 
 ```js
 $(".list").nextAll("span")
@@ -130,7 +158,59 @@ $(".list").nextAll("span")
 
 
 
-### 除自己外所有兄弟元 siblings()
+### 直到后面所有特定兄弟元素 nextAllUntil("...")
+
+#### 方法
+
+```js
+$(".box1").nextAllUntil(".red")
+```
+
+
+
+### 前一个兄弟元素 prev()
+
+#### 选择器
+
+```js
+$(".list+span")
+```
+
+#### 方法
+
+```js
+$(".list").prev()
+```
+
+
+
+### 前面所有特定兄弟元素 prevAll("span")
+
+#### 选择器
+
+```js
+$(".list~span").prevAll("span")
+```
+
+#### 方法
+
+```js
+$(".list").nextAll("span")
+```
+
+
+
+### 直到前面所有特定兄弟元素 prevAllUntil("...")
+
+#### 方法
+
+```js
+$(".box1").prevAllUntil(".red")
+```
+
+
+
+### 除自己外所有兄弟元素 siblings()
 
 #### 选择器
 
