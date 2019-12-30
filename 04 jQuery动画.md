@@ -25,7 +25,7 @@
   </div>
   ```
 
--    CSS
+- CSS
 
   ```css
   .box{width:100px;height:100px;background:#f99;}
